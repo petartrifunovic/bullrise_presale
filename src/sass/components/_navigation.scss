@@ -1,0 +1,136 @@
+.navigation {
+  position: relative;
+  display: flex;
+
+  @include respond(tab-port) {
+    position: fixed;
+    top: 0;
+    right: -70%;
+    padding: 2rem;
+    background-color: $color-grey-dark-2;
+    border-left: 1px solid rgba($color-white, 0.3);
+    width: 70%;
+    height: 100vh;
+    box-shadow: $box-shadow-dark;
+    z-index: 999999;
+    transition: 0.3s ease;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__active {
+    right: 0;
+  }
+
+  &__list {
+    text-decoration: none;
+    display: flex;
+    list-style: none;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    height: 8rem;
+    position: relative;
+
+    @include respond(tab-port) {
+      height: 5rem;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      height: 4px;
+      width: 100%;
+      background-color: $color-primary-1;
+      top: 0;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: 0.3s ease;
+
+      @include respond(tab-port) {
+        display: none;
+      }
+    }
+
+    &:hover::before {
+      transform: scaleX(1);
+    }
+
+    &:not(:last-child) {
+      margin-right: 3rem;
+    }
+
+    &--active::before {
+      content: '';
+      position: absolute;
+      height: 4px;
+      width: 100%;
+      background-color: $color-primary-1;
+      top: 0;
+      transform: scaleX(1);
+      transform-origin: left;
+      transition: 0.3s ease;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $color-white;
+    display: flex;
+    align-items: center;
+
+    .fas,
+    .fab {
+      margin-right: 0.5rem;
+      font-size: 1.4rem;
+      color: $color-primary-1;
+    }
+
+    @include respond(tab-port-big) {
+      font-size: 1.4rem;
+    }
+
+    @include respond(tab-port) {
+      font-size: $default-font-size;
+    }
+  }
+}
+
+//Hamburger Menu
+.hamburger-menu {
+  width: 2.9rem;
+  height: 2.9rem;
+  cursor: pointer;
+  display: none;
+
+  @include respond(tab-port) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+
+.hamburger-menu__line {
+  width: 100%;
+  height: 2px;
+  background-color: $color-primary-1;
+  transition: 0.3s ease;
+}
+
+.hamburger-menu__change .hamburger-menu__line--1 {
+  transform: rotateZ(-405deg) translate(-8px, 6px);
+}
+
+.hamburger-menu__change .hamburger-menu__line--2 {
+  opacity: 0;
+}
+
+.hamburger-menu__change .hamburger-menu__line--3 {
+  transform: rotateZ(405deg) translate(-8px, -6px);
+}

@@ -1,0 +1,21 @@
+.chart-container {
+  padding: 2rem;
+  background-image: linear-gradient(
+    to bottom right,
+    $color-grey-dark-1,
+    $color-primary-2
+  );
+  border-radius: 1rem;
+  box-shadow: $box-shadow;
+
+  @include respond(tab-land) {
+    margin-bottom: 0;
+  }
+}
+
+.chart {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+
+    <!--FontAwesome-->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <!--Google Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Swipe-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <!--Header-->
+    <div class="header">
+      <div class="header__container">
+        <!--Hamburger Menu-->
+        <div class="hamburger-menu">
+          <div class="hamburger-menu__line hamburger-menu__line--1"></div>
+          <div class="hamburger-menu__line hamburger-menu__line--2"></div>
+          <div class="hamburger-menu__line hamburger-menu__line--3"></div>
+        </div>
+
+        <!--Logo-->
+        <img src="./img/bullrise.png" alt="Bullrise" class="logo" />
+
+        <!--Search-->
+        <form action="#" class="search">
+          <input type="text" class="search__input" placeholder="Search" />
+          <button class="search__button">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+
+        <!--Navigation-->
+        <nav class="navigation">
+          <img src="./img/bullrise.png" alt="Bullrise" class="logo-nav" />
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="#"
+                ><i class="fas fa-clipboard-list"></i> Charts</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#"
+                ><i class="fas fa-wallet"></i> Rise</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#"
+                ><i class="fab fa-sellsy"></i> Swap</a
+              >
+            </li>
+            <li class="navigation__item navigation__item--active">
+              <a class="navigation__link" href="#"
+                ><i class="fas fa-coins"></i> Vote</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#"
+                ><i class="fas fa-cog"></i> Launch</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#"
+                ><i class="fas fa-sign-out-alt"></i> Screen</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!--Section -->
+    <div class="top-bar">
+      <div class="row">
+        <div class="trending" id="sticky">
+          <!-- Slider main container -->
+          <div class="swiper mySwiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+
+              <div class="swiper-slide">
+                <span class="trending-num">1</span><a class="trending-link" href="#">BNG</a>
+              </div>
+
+              <div class="swiper-slide">
+                <span class="trending-num">2</span><a class="trending-link" href="#">XHT</a>
+              </div>
+
+              <div class="swiper-slide">
+                <span class="trending-num">3</span><a class="trending-link" href="#">DOG</a>
+              </div>
+
+              <div class="swiper-slide">
+                <span class="trending-num">4</span><a class="trending-link" href="#">SAB</a>
+              </div>
+
+              <div class="swiper-slide">
+                <span class="trending-num">5</span><a class="trending-link" href="#">CAK</a>
+              </div>
+
+              <div class="swiper-slide">
+                <span class="trending-num">6</span><a class="trending-link" href="#">GEG</a>
+              </div>
+
+              <div class="swiper-slide">
+                <span class="trending-num">7</span><a class="trending-link" href="#">BEAR</a>
+              </div>
+
+              <div class="swiper-slide">
+                <span class="trending-num">8</span><a class="trending-link" href="#">WXD</a>
+              </div>
+
+              <div class="swiper-slide">
+                <span class="trending-num">9</span><a class="trending-link" href="#">EPB</a>
+              </div>
+
+              <div class="swiper-slide">
+                <span class="trending-num">10</span><a class="trending-link" href="#">CRX</a>
+              </div>
+
+              <div class="swiper-slide">
+                <span class="trending-num">11</span><a class="trending-link" href="#">DAS</a>
+              </div>
+
+              <div class="swiper-slide">
+                <span class="trending-num">12</span><a class="trending-link" href="#">SZX</a>
+              </div>
+
+              <div class="swiper-slide">
+                <span class="trending-num">13</span><a class="trending-link" href="#">SGG</a>
+              </div>
+
+              <div class="swiper-slide">
+                <span class="trending-num">14</span><a class="trending-link" href="#">LKZ</a>
+              </div>
+
+              <div class="swiper-slide">
+                <span class="trending-num">15</span><a class="trending-link" href="#">MNZ</a>
+              </div>
+
+              <div class="swiper-slide">
+                <span class="trending-num">16</span><a class="trending-link" href="#">YQR</a>
+              </div>
+
+              <div class="swiper-slide">
+                <span class="trending-num">17</span><a class="trending-link" href="#">ZXC</a>
+              </div>
+
+              <div class="swiper-slide">
+                <span class="trending-num">18</span><a class="trending-link" href="#">POI</a>
+              </div>
+
+              <div class="swiper-slide">
+                <span class="trending-num">19</span><a class="trending-link" href="#">HDA</a>
+              </div>
+
+              <div class="swiper-slide">
+                <span class="trending-num">20</span><a class="trending-link" href="#">$GHH</a>
+              </div>
+
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <span class="trending-title">Trending:</span>
+            <div class="swiper-button-prev"><i class="fas fa-chevron-left"></i></div>
+            <div class="swiper-button-next"><i class="fas fa-chevron-right"></i></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+
+        <div class="top-bar__box">
+          <div class="top-bar__help"><a class="top-bar__box-link" href="#"><i class="fas fa-info-circle"></i></a></div>
+          <div class="top-bar__telegram-chat"><a class="top-bar__box-link" href="#"><i class="fab fa-telegram"></i></a></div>
+          <div class="btn btn--secondary">Buy Sale</div>
+        </div>
+      </div>
+    </div>
+
+    <!--Section Current Presale-->
+    <section class="section-current-presale">
+      <div class="row">
+        <div class="current-presale">
+
+          <!--Profile Start-->
+          <div class="current-presale__box">
+            <span class="current-presale__status current-presale__status--ended"><i class="fas fa-hourglass-end current-presale__status-icon current-presale__status-icon--time"></i>Ended</span>
+              <img src="img/presale-profile.png" alt="Profile" class="current-presale__profile-img">
+              <h3 class="current-presale__profile-name">ToyDoge</h3>
+              <span class="current-presale__bnb">1 BNB = 35,000,000,000 TDG</span>
+
+              <div class="current-presale__content-box">
+                <span class="current-presale__content-box-title">Soft/Hard Cap</span>
+                <span class="current-presale__content-box-value">150 BNB - 300 BNB</span>
+              </div>
+
+              <!--Progress Bar-->
+              <div class="progress-container">
+                <div class="progress-ammount">
+                  <span class="progress-ammount--1">25%</span>
+                  <span class="progress-ammount--2">50%</span>
+                  <span class="progress-ammount--3">75%</span>
+                </div>
+
+                <!--Chart-->
+                <div class="progress">
+                  <div class="progress-done" data-done="50"></div>
+                </div>
+
+                <div class="progress-bottom">
+                  <span class="progress-bottom__value">0 BNB</span>
+                  <span class="progress-bottom__value">300 BNB</span>
+                </div>
+              </div>
+
+              <div class="current-presale__content-box">
+                <span class="current-presale__content-box-title">Liquidity %:</span>
+                <span class="current-presale__content-box-value">70%</span>
+              </div>
+
+              <div class="current-presale__content-box">
+                <span class="current-presale__content-box-title">Lockup Time:</span>
+                <span class="current-presale__content-box-value">30 days</span>
+              </div>
+
+              <a href="#" class="btn btn--primary">View Pool</a>
+          </div>
+           <!--Profile End-->
+
+          <!--Profile Start-->
+          <div class="current-presale__box">
+            <span class="current-presale__status current-presale__status--filled"><i class="fas fa-check current-presale__status-icon current-presale__status-icon--check"></i>Filled</span>
+              <img src="img/presale-profile.png" alt="Profile" class="current-presale__profile-img">
+              <h3 class="current-presale__profile-name">ToyDoge</h3>
+              <span class="current-presale__bnb">1 BNB = 35,000,000,000 TDG</span>
+
+              <div class="current-presale__content-box">
+                <span class="current-presale__content-box-title">Soft/Hard Cap</span>
+                <span class="current-presale__content-box-value">150 BNB - 300 BNB</span>
+              </div>
+
+              <!--Progress Bar-->
+              <div class="progress-container">
+                <div class="progress-ammount">
+                  <span class="progress-ammount--1">25%</span>
+                  <span class="progress-ammount--2">50%</span>
+                  <span class="progress-ammount--3">75%</span>
+                </div>
+
+                <!--Chart-->
+                <div class="progress">
+                  <div class="progress-done" data-done="100"></div>
+                </div>
+
+                <div class="progress-bottom">
+                  <span class="progress-bottom__value">0 BNB</span>
+                  <span class="progress-bottom__value">300 BNB</span>
+                </div>
+              </div>
+
+              <div class="current-presale__content-box">
+                <span class="current-presale__content-box-title">Liquidity %:</span>
+                <span class="current-presale__content-box-value">70%</span>
+              </div>
+
+              <div class="current-presale__content-box">
+                <span class="current-presale__content-box-title">Lockup Time:</span>
+                <span class="current-presale__content-box-value">30 days</span>
+              </div>
+
+              <a href="#" class="btn btn--primary">View Pool</a>
+          </div>
+          <!--Profile End-->
+
+          <!--Profile Start-->
+          <div class="current-presale__box">
+            <span class="current-presale__status current-presale__status--canceled"><i class="fas fa-ban current-presale__status-icon current-presale__status-icon--ban"></i>Canceled</span>
+              <img src="img/presale-profile.png" alt="Profile" class="current-presale__profile-img">
+              <h3 class="current-presale__profile-name">ToyDoge</h3>
+              <span class="current-presale__bnb">1 BNB = 35,000,000,000 TDG</span>
+
+              <div class="current-presale__content-box">
+                <span class="current-presale__content-box-title">Soft/Hard Cap</span>
+                <span class="current-presale__content-box-value">150 BNB - 300 BNB</span>
+              </div>
+
+              <!--Progress Bar-->
+              <div class="progress-container">
+                <div class="progress-ammount">
+                  <span class="progress-ammount--1">25%</span>
+                  <span class="progress-ammount--2">50%</span>
+                  <span class="progress-ammount--3">75%</span>
+                </div>
+
+                <!--Chart-->
+                <div class="progress">
+                  <div class="progress-done" data-done="60"></div>
+                </div>
+
+                <div class="progress-bottom">
+                  <span class="progress-bottom__value">0 BNB</span>
+                  <span class="progress-bottom__value">300 BNB</span>
+                </div>
+              </div>
+
+              <div class="current-presale__content-box">
+                <span class="current-presale__content-box-title">Liquidity %:</span>
+                <span class="current-presale__content-box-value">70%</span>
+              </div>
+
+              <div class="current-presale__content-box">
+                <span class="current-presale__content-box-title">Lockup Time:</span>
+                <span class="current-presale__content-box-value">30 days</span>
+              </div>
+
+              <a href="#" class="btn btn--primary">View Pool</a>
+          </div>
+          <!--Profile End-->
+
+          <!--Profile Start-->
+          <div class="current-presale__box">
+            <span class="current-presale__status current-presale__status--ended"><i class="fas fa-hourglass-end current-presale__status-icon current-presale__status-icon--time"></i>Ended</span>
+              <img src="img/presale-profile.png" alt="Profile" class="current-presale__profile-img">
+              <h3 class="current-presale__profile-name">ToyDoge</h3>
+              <span class="current-presale__bnb">1 BNB = 35,000,000,000 TDG</span>
+
+              <div class="current-presale__content-box">
+                <span class="current-presale__content-box-title">Soft/Hard Cap</span>
+                <span class="current-presale__content-box-value">150 BNB - 300 BNB</span>
+              </div>
+
+              <!--Progress Bar-->
+              <div class="progress-container">
+                <div class="progress-ammount">
+                  <span class="progress-ammount--1">25%</span>
+                  <span class="progress-ammount--2">50%</span>
+                  <span class="progress-ammount--3">75%</span>
+                </div>
+
+                <!--Chart-->
+                <div class="progress">
+                  <div class="progress-done" data-done="100"></div>
+                </div>
+
+                <div class="progress-bottom">
+                  <span class="progress-bottom__value">0 BNB</span>
+                  <span class="progress-bottom__value">300 BNB</span>
+                </div>
+              </div>
+
+              <div class="current-presale__content-box">
+                <span class="current-presale__content-box-title">Liquidity %:</span>
+                <span class="current-presale__content-box-value">70%</span>
+              </div>
+
+              <div class="current-presale__content-box">
+                <span class="current-presale__content-box-title">Lockup Time:</span>
+                <span class="current-presale__content-box-value">30 days</span>
+              </div>
+
+              <a href="#" class="btn btn--primary">View Pool</a>
+          </div>
+           <!--Profile End-->
+
+           <!--Profile Start-->
+          <div class="current-presale__box">
+            <span class="current-presale__status current-presale__status--canceled"><i class="fas fa-ban current-presale__status-icon current-presale__status-icon--ban"></i>Canceled</span>
+              <img src="img/presale-profile.png" alt="Profile" class="current-presale__profile-img">
+              <h3 class="current-presale__profile-name">ToyDoge</h3>
+              <span class="current-presale__bnb">1 BNB = 35,000,000,000 TDG</span>
+
+              <div class="current-presale__content-box">
+                <span class="current-presale__content-box-title">Soft/Hard Cap</span>
+                <span class="current-presale__content-box-value">150 BNB - 300 BNB</span>
+              </div>
+
+              <!--Progress Bar-->
+              <div class="progress-container">
+                <div class="progress-ammount">
+                  <span class="progress-ammount--1">25%</span>
+                  <span class="progress-ammount--2">50%</span>
+                  <span class="progress-ammount--3">75%</span>
+                </div>
+
+                <!--Chart-->
+                <div class="progress">
+                  <div class="progress-done" data-done="20"></div>
+                </div>
+
+                <div class="progress-bottom">
+                  <span class="progress-bottom__value">0 BNB</span>
+                  <span class="progress-bottom__value">300 BNB</span>
+                </div>
+              </div>
+
+              <div class="current-presale__content-box">
+                <span class="current-presale__content-box-title">Liquidity %:</span>
+                <span class="current-presale__content-box-value">70%</span>
+              </div>
+
+              <div class="current-presale__content-box">
+                <span class="current-presale__content-box-title">Lockup Time:</span>
+                <span class="current-presale__content-box-value">30 days</span>
+              </div>
+
+              <a href="#" class="btn btn--primary">View Pool</a>
+          </div>
+           <!--Profile End-->
+
+           <!--Profile Start-->
+          <div class="current-presale__box">
+            <span class="current-presale__status current-presale__status--upcoming"><i class="fas fa-bell current-presale__status-icon current-presale__status-icon--bell"></i>Upcoming</span>
+              <img src="img/presale-profile.png" alt="Profile" class="current-presale__profile-img">
+              <h3 class="current-presale__profile-name">ToyDoge</h3>
+              <span class="current-presale__bnb">1 BNB = 35,000,000,000 TDG</span>
+
+              <div class="current-presale__content-box">
+                <span class="current-presale__content-box-title">Soft/Hard Cap</span>
+                <span class="current-presale__content-box-value">150 BNB - 300 BNB</span>
+              </div>
+
+              <!--Progress Bar-->
+              <div class="progress-container">
+                <div class="progress-ammount">
+                  <span class="progress-ammount--1">25%</span>
+                  <span class="progress-ammount--2">50%</span>
+                  <span class="progress-ammount--3">75%</span>
+                </div>
+
+                <!--Chart-->
+                <div class="progress">
+                  <div class="progress-done" data-done="0"></div>
+                </div>
+
+                <div class="progress-bottom">
+                  <span class="progress-bottom__value">0 BNB</span>
+                  <span class="progress-bottom__value">300 BNB</span>
+                </div>
+              </div>
+
+              <div class="current-presale__content-box">
+                <span class="current-presale__content-box-title">Liquidity %:</span>
+                <span class="current-presale__content-box-value">70%</span>
+              </div>
+
+              <div class="current-presale__content-box">
+                <span class="current-presale__content-box-title">Lockup Time:</span>
+                <span class="current-presale__content-box-value">30 days</span>
+              </div>
+
+              <a href="#" class="btn btn--primary">View Pool</a>
+          </div>
+           <!--Profile End-->
+
+           <!--Profile Start-->
+          <div class="current-presale__box">
+            <span class="current-presale__status current-presale__status--filled"><i class="fas fa-check current-presale__status-icon current-presale__status-icon--check"></i>Filled</span>
+              <img src="img/presale-profile.png" alt="Profile" class="current-presale__profile-img">
+              <h3 class="current-presale__profile-name">ToyDoge</h3>
+              <span class="current-presale__bnb">1 BNB = 35,000,000,000 TDG</span>
+
+              <div class="current-presale__content-box">
+                <span class="current-presale__content-box-title">Soft/Hard Cap</span>
+                <span class="current-presale__content-box-value">150 BNB - 300 BNB</span>
+              </div>
+
+              <!--Progress Bar-->
+              <div class="progress-container">
+                <div class="progress-ammount">
+                  <span class="progress-ammount--1">25%</span>
+                  <span class="progress-ammount--2">50%</span>
+                  <span class="progress-ammount--3">75%</span>
+                </div>
+
+                <!--Chart-->
+                <div class="progress">
+                  <div class="progress-done" data-done="100"></div>
+                </div>
+
+                <div class="progress-bottom">
+                  <span class="progress-bottom__value">0 BNB</span>
+                  <span class="progress-bottom__value">300 BNB</span>
+                </div>
+              </div>
+
+              <div class="current-presale__content-box">
+                <span class="current-presale__content-box-title">Liquidity %:</span>
+                <span class="current-presale__content-box-value">70%</span>
+              </div>
+
+              <div class="current-presale__content-box">
+                <span class="current-presale__content-box-title">Lockup Time:</span>
+                <span class="current-presale__content-box-value">30 days</span>
+              </div>
+
+              <a href="#" class="btn btn--primary">View Pool</a>
+          </div>
+          <!--Profile End-->
+
+           <!--Profile Start-->
+           <div class="current-presale__box">
+            <span class="current-presale__status current-presale__status--ended"><i class="fas fa-hourglass-end current-presale__status-icon current-presale__status-icon--time"></i>Ended</span>
+              <img src="img/presale-profile.png" alt="Profile" class="current-presale__profile-img">
+              <h3 class="current-presale__profile-name">ToyDoge</h3>
+              <span class="current-presale__bnb">1 BNB = 35,000,000,000 TDG</span>
+
+              <div class="current-presale__content-box">
+                <span class="current-presale__content-box-title">Soft/Hard Cap</span>
+                <span class="current-presale__content-box-value">150 BNB - 300 BNB</span>
+              </div>
+
+              <!--Progress Bar-->
+              <div class="progress-container">
+                <div class="progress-ammount">
+                  <span class="progress-ammount--1">25%</span>
+                  <span class="progress-ammount--2">50%</span>
+                  <span class="progress-ammount--3">75%</span>
+                </div>
+
+                <!--Chart-->
+                <div class="progress">
+                  <div class="progress-done" data-done="0"></div>
+                </div>
+
+                <div class="progress-bottom">
+                  <span class="progress-bottom__value">0 BNB</span>
+                  <span class="progress-bottom__value">300 BNB</span>
+                </div>
+              </div>
+
+              <div class="current-presale__content-box">
+                <span class="current-presale__content-box-title">Liquidity %:</span>
+                <span class="current-presale__content-box-value">70%</span>
+              </div>
+
+              <div class="current-presale__content-box">
+                <span class="current-presale__content-box-title">Lockup Time:</span>
+                <span class="current-presale__content-box-value">30 days</span>
+              </div>
+
+              <a href="#" class="btn btn--primary">View Pool</a>
+          </div>
+          <!--Profile End-->
+
+          <!--Profile Start-->
+          <div class="current-presale__box">
+            <span class="current-presale__status current-presale__status--canceled"><i class="fas fa-ban current-presale__status-icon current-presale__status-icon--ban"></i>Canceled</span>
+              <img src="img/presale-profile.png" alt="Profile" class="current-presale__profile-img">
+              <h3 class="current-presale__profile-name">ToyDoge</h3>
+              <span class="current-presale__bnb">1 BNB = 35,000,000,000 TDG</span>
+
+              <div class="current-presale__content-box">
+                <span class="current-presale__content-box-title">Soft/Hard Cap</span>
+                <span class="current-presale__content-box-value">150 BNB - 300 BNB</span>
+              </div>
+
+              <!--Progress Bar-->
+              <div class="progress-container">
+                <div class="progress-ammount">
+                  <span class="progress-ammount--1">25%</span>
+                  <span class="progress-ammount--2">50%</span>
+                  <span class="progress-ammount--3">75%</span>
+                </div>
+
+                <!--Chart-->
+                <div class="progress">
+                  <div class="progress-done" data-done="40"></div>
+                </div>
+
+                <div class="progress-bottom">
+                  <span class="progress-bottom__value">0 BNB</span>
+                  <span class="progress-bottom__value">300 BNB</span>
+                </div>
+              </div>
+
+              <div class="current-presale__content-box">
+                <span class="current-presale__content-box-title">Liquidity %:</span>
+                <span class="current-presale__content-box-value">70%</span>
+              </div>
+
+              <div class="current-presale__content-box">
+                <span class="current-presale__content-box-title">Lockup Time:</span>
+                <span class="current-presale__content-box-value">30 days</span>
+              </div>
+
+              <a href="#" class="btn btn--primary">View Pool</a>
+          </div>
+           <!--Profile End-->
+
+          <!--Profile Start-->
+          <div class="current-presale__box">
+            <span class="current-presale__status current-presale__status--upcoming"><i class="fas fa-bell current-presale__status-icon current-presale__status-icon--bell"></i>Upcoming</span>
+              <img src="img/presale-profile.png" alt="Profile" class="current-presale__profile-img">
+              <h3 class="current-presale__profile-name">ToyDoge</h3>
+              <span class="current-presale__bnb">1 BNB = 35,000,000,000 TDG</span>
+
+              <div class="current-presale__content-box">
+                <span class="current-presale__content-box-title">Soft/Hard Cap</span>
+                <span class="current-presale__content-box-value">150 BNB - 300 BNB</span>
+              </div>
+
+              <!--Progress Bar-->
+              <div class="progress-container">
+                <div class="progress-ammount">
+                  <span class="progress-ammount--1">25%</span>
+                  <span class="progress-ammount--2">50%</span>
+                  <span class="progress-ammount--3">75%</span>
+                </div>
+
+                <!--Chart-->
+                <div class="progress">
+                  <div class="progress-done" data-done="0"></div>
+                </div>
+
+                <div class="progress-bottom">
+                  <span class="progress-bottom__value">0 BNB</span>
+                  <span class="progress-bottom__value">300 BNB</span>
+                </div>
+              </div>
+
+              <div class="current-presale__content-box">
+                <span class="current-presale__content-box-title">Liquidity %:</span>
+                <span class="current-presale__content-box-value">70%</span>
+              </div>
+
+              <div class="current-presale__content-box">
+                <span class="current-presale__content-box-title">Lockup Time:</span>
+                <span class="current-presale__content-box-value">30 days</span>
+              </div>
+
+              <a href="#" class="btn btn--primary">View Pool</a>
+          </div>
+           <!--Profile End-->
+
+          <!--Profile Start-->
+          <div class="current-presale__box">
+            <span class="current-presale__status current-presale__status--canceled"><i class="fas fa-ban current-presale__status-icon current-presale__status-icon--ban"></i>Canceled</span>
+              <img src="img/presale-profile.png" alt="Profile" class="current-presale__profile-img">
+              <h3 class="current-presale__profile-name">ToyDoge</h3>
+              <span class="current-presale__bnb">1 BNB = 35,000,000,000 TDG</span>
+
+              <div class="current-presale__content-box">
+                <span class="current-presale__content-box-title">Soft/Hard Cap</span>
+                <span class="current-presale__content-box-value">150 BNB - 300 BNB</span>
+              </div>
+
+              <!--Progress Bar-->
+              <div class="progress-container">
+                <div class="progress-ammount">
+                  <span class="progress-ammount--1">25%</span>
+                  <span class="progress-ammount--2">50%</span>
+                  <span class="progress-ammount--3">75%</span>
+                </div>
+
+                <!--Chart-->
+                <div class="progress">
+                  <div class="progress-done" data-done="90"></div>
+                </div>
+
+                <div class="progress-bottom">
+                  <span class="progress-bottom__value">0 BNB</span>
+                  <span class="progress-bottom__value">300 BNB</span>
+                </div>
+              </div>
+
+              <div class="current-presale__content-box">
+                <span class="current-presale__content-box-title">Liquidity %:</span>
+                <span class="current-presale__content-box-value">70%</span>
+              </div>
+
+              <div class="current-presale__content-box">
+                <span class="current-presale__content-box-title">Lockup Time:</span>
+                <span class="current-presale__content-box-value">30 days</span>
+              </div>
+
+              <a href="#" class="btn btn--primary">View Pool</a>
+          </div>
+           <!--Profile End-->
+
+           <!--Profile Start-->
+          <div class="current-presale__box">
+            <span class="current-presale__status current-presale__status--filled"><i class="fas fa-check current-presale__status-icon current-presale__status-icon--check"></i>Filled</span>
+              <img src="img/presale-profile.png" alt="Profile" class="current-presale__profile-img">
+              <h3 class="current-presale__profile-name">ToyDoge</h3>
+              <span class="current-presale__bnb">1 BNB = 35,000,000,000 TDG</span>
+
+              <div class="current-presale__content-box">
+                <span class="current-presale__content-box-title">Soft/Hard Cap</span>
+                <span class="current-presale__content-box-value">150 BNB - 300 BNB</span>
+              </div>
+
+              <!--Progress Bar-->
+              <div class="progress-container">
+                <div class="progress-ammount">
+                  <span class="progress-ammount--1">25%</span>
+                  <span class="progress-ammount--2">50%</span>
+                  <span class="progress-ammount--3">75%</span>
+                </div>
+
+                <!--Chart-->
+                <div class="progress">
+                  <div class="progress-done" data-done="100"></div>
+                </div>
+
+                <div class="progress-bottom">
+                  <span class="progress-bottom__value">0 BNB</span>
+                  <span class="progress-bottom__value">300 BNB</span>
+                </div>
+              </div>
+
+              <div class="current-presale__content-box">
+                <span class="current-presale__content-box-title">Liquidity %:</span>
+                <span class="current-presale__content-box-value">70%</span>
+              </div>
+
+              <div class="current-presale__content-box">
+                <span class="current-presale__content-box-title">Lockup Time:</span>
+                <span class="current-presale__content-box-value">30 days</span>
+              </div>
+
+              <a href="#" class="btn btn--primary">View Pool</a>
+          </div>
+           <!--Profile End-->
+
+           <button class="btn btn--secondary">Load More</button>
+
+        </div>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="footer u-margin-bottom-medium">
+      <div class="row">
+        <img src="./img/bullrise.png" alt="Bullrise" class="footer__logo" />
+        <div class="footer-social">
+          <a class="footer-social__link" href="#"><i class="fab fa-twitter"></i></a>
+          <a class="footer-social__link" href="#"><i class="fab fa-telegram-plane"></i></i></a>
+        </div>
+
+        <div class="footer-box">
+          <a class="footer-box__link" href="#">All Time Rankings</a>
+          <a class="footer-box__link" href="#">Daily Ranking</a>
+          <a class="footer-box__link" href="#">New Listings</a>
+          <a class="footer-box__link" href="#">Submit Coin</a>
+          <a class="footer-box__link" href="#">Terms & Conditions</a>
+          <a class="footer-box__link" href="#">Privacy Policy</a>
+          <a class="footer-box__link" href="#">Contact Us</a>
+          <a class="footer-box__link" href="#">Advertise</a>
+        </div>
+
+        <p class="copyright">© 2021 coinsniper.net</p>
+
+        <img src="./img/dmca.png" alt="DMCA Protected" class="footer__img">
+      </div>
+    </footer>
+
+
+    <script type="module">
+      var swiper = new Swiper('.swiper', {
+        slidesPerView: 10,
+        freeMode: true,
+        autoplay: {
+          delay: 2000,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        // Responsive breakpoints
+        breakpoints: {
+        // when window width is >= 1200px
+        900: {
+          slidesPerView: 8,
+        
+        },
+        768: {
+          slidesPerView: 6,
+          spaceBetween: 0,
+        },
+        600: {
+          slidesPerView: 5,
+          spaceBetween: 0,
+        },
+        500: {
+          slidesPerView: 4,
+          spaceBetween: 0,
+        },
+        400: {
+          slidesPerView: 3,
+          spaceBetween: 0,
+        },
+        },
+      });
+    </script>
+
+  </body>
+</html>

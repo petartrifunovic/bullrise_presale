@@ -1,0 +1,101 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.3rem 3.7rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all 0.2s;
+    position: relative;
+    font-size: 1.4rem;
+
+    //Change for the <button> element
+    border: none;
+    cursor: pointer;
+
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+
+  &--primary {
+    background-image: linear-gradient(
+      to right top,
+      $color-primary-1,
+      $color-primary-2
+    );
+    color: $color-white;
+
+    &:hover {
+      background-image: linear-gradient(
+        to right top,
+        $color-primary-2,
+        $color-primary-1
+      );
+    }
+  }
+
+  &--secondary {
+    background: none;
+    border: 2px solid $color-white;
+    color: $color-white;
+    transition: 0.2s ease;
+
+    &:hover {
+      background: $color-white;
+      color: $color-grey-dark-3;
+    }
+  }
+
+  &--profile,
+  &--profile-2 {
+    padding: 0.5rem;
+    width: 100%;
+    background-color: $color-white;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    font-size: 1.4rem;
+    color: $color-grey-dark-3;
+  }
+
+  &--profile-2 {
+    background-color: #663ebf;
+    color: $color-white;
+  }
+
+  &--profile-img {
+    width: 2rem;
+    margin-right: 0.5rem;
+  }
+}
+
+.default-link {
+  text-decoration: none;
+  color: $color-white;
+  padding: 0.5rem 0;
+  transition: 0.2s ease;
+  transform: translateX(0);
+
+  .fas {
+    transition: 0.2s ease;
+    margin-right: 3px;
+  }
+
+  &:hover .fas {
+    opacity: 0.7;
+  }
+
+  &--2 {
+    color: rgba($color-white, 0.6);
+    text-decoration: underline;
+  }
+}

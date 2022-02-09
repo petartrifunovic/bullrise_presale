@@ -1,0 +1,53 @@
+.section-intro {
+  text-align: center;
+
+  &__box-container {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    grid-gap: 3rem;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  &__box {
+    padding: 2rem;
+    background-image: linear-gradient(
+      to bottom right,
+      $color-grey-dark-1,
+      $color-primary-2
+    );
+    border-radius: 1rem;
+    box-shadow: $box-shadow;
+    transition: 0.2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: $box-shadow-dark;
+    }
+  }
+
+  &__link {
+    color: $color-white;
+  }
+
+  &__bg-icon {
+    position: absolute;
+    font-size: 4rem;
+    bottom: 0rem;
+    right: 1.5rem;
+    opacity: 0.2;
+  }
+
+  .heading-tertiary {
+    margin-bottom: 0;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

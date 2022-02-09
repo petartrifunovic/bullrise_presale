@@ -1,0 +1,45 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+  background-image: linear-gradient(
+    to bottom right,
+    $color-grey-dark-1,
+    $color-primary-3
+  );
+  border-bottom: 1px solid rgba($color-white, 0.1);
+  box-shadow: $box-shadow;
+  margin-bottom: 2rem;
+  position: absolute;
+  top: 0;
+  z-index: 99999999999999;
+
+  @include respond(tab-port) {
+    padding: 2rem;
+  }
+
+  &__container {
+    width: 136.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+
+    @include respond(tab-port) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__sticky {
+    position: fixed;
+    background-image: linear-gradient(
+      to bottom right,
+      rgba($color-grey-dark-1, 0.9),
+      rgba($color-primary-3, 0.9)
+    );
+  }
+}

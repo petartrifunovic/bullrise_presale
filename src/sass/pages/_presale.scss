@@ -1,0 +1,157 @@
+.section-current-presale {
+  background-color: $color-grey-dark-1;
+  padding: 3rem 3rem;
+  border-radius: 3rem;
+  box-shadow: $box-shadow;
+  width: 136.6rem;
+
+  @include respond(tab-land) {
+    width: 100%;
+  }
+
+  @include respond(tab-port) {
+    background: none;
+    padding: 2rem 0 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
+
+.current-presale {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+  width: 100%;
+
+  @include respond(tab-land) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include respond(phone-big) {
+    grid-template-columns: 1fr;
+  }
+
+  &__box {
+    padding: 2rem;
+    background-image: linear-gradient(
+      to bottom right,
+      $color-grey-dark-1,
+      $color-primary-2
+    );
+    border-radius: 1rem;
+    box-shadow: $box-shadow;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__status {
+    padding: 0.5rem 2rem;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $color-white;
+    border-radius: 100px;
+
+    &--filled {
+      border: 2px solid $color-green;
+      background-color: $color-grey-dark-1;
+    }
+
+    &--upcoming {
+      border: 2px solid $color-secondary-1;
+      background-color: $color-grey-dark-1;
+    }
+
+    &--canceled {
+      border: 2px solid $color-grey-dark-3;
+
+      background-color: $color-grey-dark-1;
+      opacity: 0.6;
+    }
+
+    &--ended {
+      border: 2px solid $color-primary-1;
+      background-color: $color-grey-dark-1;
+    }
+  }
+
+  &__status-icon {
+    margin-right: 0.5rem;
+    color: inherit;
+
+    &--bell {
+      color: $color-secondary-1;
+    }
+
+    &--check {
+      color: $color-green;
+    }
+
+    &--time {
+      color: $color-primary-1;
+    }
+
+    &--ban {
+      color: $color-white;
+    }
+  }
+
+  &__profile-img {
+    height: 8rem;
+    border-radius: 50%;
+    border: 2px solid $color-primary-3;
+  }
+
+  &__profile-name {
+    font-weight: 300;
+  }
+
+  &__bnb {
+    font-size: $default-font-size;
+    color: $color-secondary-1;
+    display: block;
+    margin-bottom: 2rem;
+  }
+
+  &__content-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: $default-font-size;
+  }
+
+  &__content-box-title {
+  }
+
+  &__content-box-value {
+    color: rgba($color-white, 0.6);
+  }
+
+  .btn--primary {
+    margin-top: 2rem;
+  }
+
+  .btn--secondary {
+    grid-column: 2 / 3;
+
+    @include respond(tab-land) {
+      grid-column: 1 / -1;
+      width: 30rem;
+      margin: 0 auto;
+    }
+
+    @include respond(phone-big) {
+      width: 60%;
+    }
+
+    @include respond(phone) {
+      width: 50%;
+    }
+  }
+}

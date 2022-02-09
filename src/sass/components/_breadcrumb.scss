@@ -1,0 +1,21 @@
+.breadcrumb {
+  text-transform: uppercase;
+
+  @include respond(phone-big) {
+    font-size: 1.4rem;
+  }
+
+  &__link {
+    margin-right: 1rem;
+    text-decoration: none;
+    color: $color-white;
+  }
+
+  &__profile {
+    color: rgba($color-white, 0.6);
+  }
+
+  .fas {
+    margin-right: 0.5rem;
+  }
+}

@@ -1,0 +1,85 @@
+//Chart Start
+.progress-container {
+  margin-top: 4rem;
+}
+
+.progress-container + .btn--primary {
+  margin: 0 auto;
+  display: block;
+}
+
+.progress-ammount {
+  display: flex;
+  text-align: center;
+  position: relative;
+  z-index: 9999999;
+  top: -2rem !important;
+  font-size: 1.2rem;
+
+  &--1 {
+    position: absolute;
+    right: 75%;
+  }
+
+  &--2 {
+    position: absolute;
+    right: 50%;
+  }
+
+  &--3 {
+    position: absolute;
+    right: 25%;
+  }
+
+  &--1::after,
+  &--2::after,
+  &--3::after {
+    content: '';
+    width: 2px;
+    background-color: rgba($color-grey-dark-3, 0.2);
+    position: absolute;
+    top: 2rem;
+    height: 1.5rem;
+  }
+}
+
+.progress {
+  background-color: $color-grey-dark-1;
+  border-radius: 2rem;
+  position: relative;
+  height: 1.5rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.progress-done {
+  background: $color-secondary-1;
+  border-top-left-radius: 3rem;
+  border-bottom-left-radius: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 0;
+  opacity: 0;
+  transition: 1s ease 0.3s;
+}
+
+.progress-line {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+}
+
+.progress-bottom {
+  display: flex;
+  justify-content: space-between;
+  color: rgba($color-white, 0.6);
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+
+  &__value {
+    font-size: 1.4rem;
+  }
+}

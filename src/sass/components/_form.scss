@@ -1,0 +1,434 @@
+.search {
+  flex: 0 0 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include respond(tab-port-big) {
+    flex: 1;
+    padding: 0 2rem 0 0;
+  }
+
+  @include respond(tab-port) {
+    flex: 1;
+    padding-right: 0;
+  }
+
+  &__input {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: $color-white;
+    color: $color-primary-1;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 100px;
+    width: 90%;
+    transition: all 0.2s;
+    margin-right: -3.25rem;
+
+    @include respond(tab-port) {
+      width: 100%;
+    }
+
+    &:focus {
+      outline: none;
+      width: 100%;
+    }
+
+    &::-webkit-input-placeholder {
+      font-weight: 400;
+      font-size: 1.5rem;
+      color: $color-primary-1;
+    }
+  }
+
+  &__input:focus + &__button {
+    background-color: $color-white;
+  }
+
+  &__button {
+    border: none;
+    background-color: $color-white;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:active {
+      transform: translateY(2px);
+    }
+  }
+
+  .fas {
+    color: $color-primary-1;
+    font-size: 1.5rem;
+    background: none;
+    cursor: pointer;
+  }
+}
+
+//Form
+.container-form {
+  width: 136.6rem;
+  background-image: linear-gradient(
+    to bottom,
+    $color-grey-dark-2,
+    $color-grey-dark-1
+  );
+  padding: 3rem;
+  border-radius: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  box-shadow: $box-shadow;
+
+  @include respond(tab-land) {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+
+  @include respond(tab-port) {
+    background: none;
+    padding: 2rem 0 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
+
+.form {
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 80rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 2.5rem;
+
+  @include respond(tab-port) {
+    width: 100%;
+  }
+
+  @include respond(phone-big) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__description {
+    margin-bottom: 0.5rem;
+    text-align: left;
+
+    &--small {
+      font-size: 1.2rem;
+      color: rgba($color-white, 0.6);
+    }
+
+    &--full-width {
+      grid-column: 1 / -1;
+    }
+  }
+
+  &__group {
+    margin-bottom: 3rem;
+    text-align: left;
+
+    &--photo {
+      grid-row: 1 / span 3;
+      position: relative;
+      height: 25rem;
+      width: 25rem;
+      margin: 0 auto 3rem;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &--radio-btn {
+      text-align: left;
+    }
+
+    &--checkbox {
+      display: flex;
+      align-items: center;
+      font-size: 1.4rem;
+    }
+
+    &--checkbox-text {
+      margin-right: 0.5rem;
+    }
+
+    &--optional-1 {
+      display: none;
+    }
+
+    &--optional-2 {
+      display: none;
+    }
+
+    &--optional-remove-hidden {
+      display: block;
+    }
+  }
+
+  &__input {
+    font-size: 1.5rem;
+    font-family: inherit;
+    color: inherit;
+    padding: 1.7rem 2rem 1.4rem;
+    background-color: rgba($color-white, 0.8);
+    border: none;
+    border-radius: 0;
+    border-bottom: 3px solid transparent;
+    width: 100%;
+    display: block;
+    transition: all 0.3s;
+    color: $color-grey-dark-3;
+
+    &:focus {
+      outline: none;
+      border-bottom: 3px solid none;
+    }
+
+    &:focus:invalid {
+      border-bottom: 3px solid $color-primary-1;
+    }
+
+    &::-webkit-input-placeholder {
+      color: $color-primary-2;
+    }
+  }
+
+  &__input-description {
+    max-width: 80rem;
+    min-width: 80rem;
+    height: 15rem;
+
+    @include respond(tab-land) {
+      max-width: 100% !important;
+      min-width: 100% !important;
+    }
+  }
+
+  &__label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: 2rem;
+    margin-top: 4px;
+    display: block;
+    transition: all 0.3s;
+    position: absolute;
+  }
+
+  &__input:placeholder-shown + &__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4px);
+  }
+
+  &__btn {
+    font-family: inherit;
+    font-size: $default-font-size;
+    color: $color-white;
+    background-color: $color-primary-1;
+    padding: 1.5rem 8rem;
+    border: none;
+    border-radius: 0.5rem;
+    backface-visibility: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: $color-primary-2;
+    }
+  }
+
+  &__radio-group {
+    display: inline-block;
+  }
+
+  &__radio-input {
+    display: none;
+  }
+
+  &__radio-label {
+    font-size: $default-font-size;
+    cursor: pointer;
+    position: relative;
+    padding-left: 2.5rem;
+    margin-right: 2rem;
+    font-size: 1.4rem;
+  }
+
+  &__radio-button {
+    height: 2rem;
+    width: 2rem;
+    border: 5px solid $color-primary-1;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: -0.2rem;
+
+    &::after {
+      content: '';
+      display: block;
+      height: 1.3rem;
+      width: 1.3rem;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: $color-primary-1;
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+  }
+
+  &__radio-input:checked ~ &__radio-label &__radio-button::after {
+    opacity: 1;
+  }
+
+  &__select {
+    appearance: none;
+    border: 0;
+    outline: 0;
+    font: inherit;
+    width: 100%;
+    height: 3em;
+    padding: 0 4em 0 1em;
+    background: url('https://i.ibb.co/8z2hf0f/arrow-down.png') no-repeat right
+        1.7rem center / 1.5rem,
+      linear-gradient(
+        to left,
+        rgba($color-white, 0.2) 3em,
+        rgba($color-white, 0.1) 3em
+      );
+    color: $color-white;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+      background-color: $color-grey-dark-1;
+    }
+
+    /* Remove IE arrow */
+    &::-ms-expand {
+      display: none;
+    }
+  }
+
+  &__select-option {
+    color: inherit;
+    background-color: $color-white;
+  }
+}
+
+input[type='checkbox'] {
+  appearance: none;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: $color-primary-1;
+  position: relative;
+  margin-right: 0.5rem;
+
+  &::before {
+    content: '';
+    width: 1.12rem;
+    height: 1.12rem;
+    position: absolute;
+    background: $color-grey-dark-1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+  }
+
+  &:checked {
+    &::after {
+      content: '';
+      width: 1.2rem;
+      height: 1.2rem;
+      position: absolute;
+      background: $color-primary-1;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+    }
+  }
+}
+
+.form-2 {
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 80rem;
+
+  @include respond(tab-land) {
+    width: 100%;
+  }
+
+  &__2-col {
+    display: grid;
+    grid-template-columns: 25rem 2fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 3rem;
+
+    @include respond(tab-port) {
+      grid-template-columns: max-content 1fr;
+    }
+
+    @include respond(phone-big) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__3-col {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 3rem;
+
+    @include respond(phone-big) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  #photo {
+    height: 100%;
+
+    @include respond(phone-big) {
+      height: 25rem;
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+
+  #file {
+    display: none;
+  }
+
+  #uploadBtn {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    background-color: rgba($color-grey-dark-3, 0.5);
+    color: $color-white;
+
+    cursor: pointer;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &::after {
+      content: '250x250px';
+      font-size: 1.2rem;
+      color: rgba($color-white, 0.6);
+    }
+  }
+}

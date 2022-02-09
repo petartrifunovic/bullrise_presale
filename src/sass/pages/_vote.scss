@@ -1,0 +1,94 @@
+.section-intro {
+  width: 100%;
+  padding: 3rem 0;
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem;
+  align-items: center;
+
+  @include respond(tab-port-big) {
+    grid-template-columns: 1fr;
+  }
+
+  &__box {
+    &--1 {
+      @include respond(tab-port-big) {
+        text-align: center;
+      }
+    }
+  }
+
+  .heading-primary {
+    font-size: 4rem;
+  }
+
+  &__advertise-box {
+    margin-bottom: 3rem;
+
+    @include respond(phone-big) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .default-link {
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+    }
+  }
+
+  &__banner {
+    width: 100%;
+
+    @include respond(tab-port-big) {
+      width: 70%;
+      display: block;
+      margin: 0 auto;
+    }
+
+    @include respond(phone-big) {
+      width: 100%;
+    }
+  }
+}
+
+.section-vote {
+  width: 100%;
+  padding: 3rem 0;
+}
+
+.section-review {
+  width: 100%;
+  padding: 3rem 0;
+}
+
+.review-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem;
+
+  @include respond(tab-port) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.review-box {
+  &--top {
+    padding: 3rem;
+    border-radius: 3rem;
+    background-image: linear-gradient(
+      to bottom,
+      $color-grey-dark-2,
+      $color-grey-dark-1
+    );
+    transform: translateY(0);
+    transition: 0.2s ease;
+
+    &:hover {
+      transform: translateY(-0.5rem);
+    }
+  }
+}
